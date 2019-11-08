@@ -166,6 +166,10 @@ public class StringBuffer01 {
 		System.out.println("3:"+b.capacity());
 		System.out.println("4:"+b.length());
 		
+		StringBuffer c = new StringBuffer("nihao");	
+		b.setLength(2);
+		System.out.println("5:"+b.capacity());
+		System.out.println("6:"+b.length());
 	}
 	
 	/**
@@ -230,11 +234,38 @@ public class StringBuffer01 {
 		
 	}
 	
+	
+	/**
+	 * substring 
+	 * 注意! 这个是返回String 而且自身不会变动的!
+	 * 
+	 * 
+	 */
 	@Test
 	public void test08(){
-		
-		
+		StringBuffer a = new StringBuffer("hello world ");
+		System.out.println(a.substring(6));
+		System.out.println(a);
 	}
+	
+	/**
+	 * 
+	 * 这个是操作自身啦
+	 * 
+	 * 
+	 */
+	@Test
+	public void test09(){
+		StringBuffer a = new StringBuffer("hello world ");
+		a.reverse();
+		System.out.println(a);
+	}
+	
+	
+	
+	
+	
+	
 	
 	
 	
